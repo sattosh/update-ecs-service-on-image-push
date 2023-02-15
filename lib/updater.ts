@@ -45,7 +45,6 @@ export class UpdaterStack extends cdk.Stack {
         SERVICE_ARN: service.serviceArn,
         CLUSTER_NAME: service.cluster.clusterName,
         CLUSTER_ARN: service.cluster.clusterArn,
-        TASK_DEFINITION_ARN: service.taskDefinition.taskDefinitionArn,
       },
       events: [new eventSource.SnsEventSource(snsTopic)],
     });
